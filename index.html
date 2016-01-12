@@ -1,130 +1,106 @@
-<!--
-Name: emailer-x
-Author: sumitbhaintwal
-V: 1.0 (beta)
--->
-
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
+	<head>
+		<title></title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<style type="text/css">
-		*{
-			box-sizing:border-box;
-			margin: 0;
-			padding: 0;
-			font-size: 100%;
-			vertical-align: middle;
-			max-width: 100%;
-		}
-		html{
-			max-height: 100%;
-		}
-		body{
-			height: 100%;
-		}
-		table{
-			width: 100%;
-			text-align: center;
-			margin: 0 auto;
-		}
-		table tr td{
-			width: 100%;
-			padding: 10px;
-		}
-		.two-col tr td{
-			width: 50% !important;
-		}
-		.placeholder{
-			visibility: hidden !important;
-		}
-		
-		@media only screen and (max-width: 768px){
-			.two-col tr td{
-				width: 100% !important;
-				display: block;
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+				clear: both;
+				margin: 0;
+				padding: 0;
+				font-size: 100%;
+				vertical-align: middle;
+				max-width: 100%;
+				font-family: sans-serif;
 			}
-			.placeholder{
-				display: none !important;
-		}
-		}
-	</style>
-</head>
-<body>
-	<table bgcolor="blue">
-		<tr>
-			<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</td>
-		</tr>
-	</table>
-	<table bgcolor="grey" class="two-col">
-		<tr>
-			<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</td>
-			<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</td>
-		</tr>
-	</table>
-	<table bgcolor="grey" class="two-col">
-		<tr>
-			<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</td>
-			<td class="placeholder">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</td>
-		</tr>
-	</table>
-	<table bgcolor="grey" class="two-col">
-		<tr>
-			<td class="placeholder">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</td>
-			<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</td>
-		</tr>
-	</table>
-</body>
+			html{
+				max-height: 100%;
+			}
+			body{
+				height: 100%;
+			}
+			table{
+				width: 100%;
+				text-align: center;
+				margin: 0 auto;
+				border-spacing:0;
+			}
+			table tr td{
+				width: 100%;
+				padding: 10px;
+			}
+			table tr .two-col{
+				width: 50% !important;
+			}
+			table tr .two-col-placeholder{
+				width: 50%;
+			}
+			.header tr td{
+				font-size: 36px;
+			}
+			@media only screen and (max-width: 768px){
+
+				table tr .two-col{
+					width: 100% !important;
+					float: left;
+					display: block;
+				}
+				.two-col-placeholder{
+					width: 0 !important;
+					height: 0 !important;
+					padding: 0 !important;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<table bgcolor="#ccc" class="header">
+			<tr>
+				<td>
+					This is your header
+				</td>
+			</tr>
+		</table>
+		<table bgcolor="#ddd">
+			<tr>
+				<td>
+					One Columned Table
+				</td>
+			</tr>
+		</table>
+		<table bgcolor="#eee">
+			<tr>
+				<td class="two-col">
+					Two Columned Table
+				</td>
+				<td class="two-col">
+					Two Columned Table
+				</td>
+			</tr>
+		</table>
+		<table bgcolor="#aaa">
+			<tr>
+				<td class="two-col">
+					<h1>This is heading</h1>
+					Right Column Hidden
+				</td>
+				<td class="two-col-placeholder">
+					<!--Don't keep any content here-->
+				</td>
+			</tr>
+		</table>
+		<table bgcolor="grey">
+			<tr>
+				<td class="two-col-placeholder">
+					<!--Don't keep any content here-->
+				</td>
+				<td class="two-col">
+					Left Column Hidden
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>
