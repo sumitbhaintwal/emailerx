@@ -1,106 +1,217 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title></title>
+<head>
+	<title></title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<style type="text/css">
-			*{
-				box-sizing:border-box;
-				clear: both;
-				margin: 0;
-				padding: 0;
-				font-size: 100%;
-				vertical-align: middle;
-				max-width: 100%;
-				font-family: sans-serif;
-			}
-			html{
-				max-height: 100%;
-			}
-			body{
-				height: 100%;
-			}
-			table{
-				width: 100%;
-				text-align: center;
-				margin: 0 auto;
-				border-spacing:0;
-			}
-			table tr td{
-				width: 100%;
-				padding: 10px;
-			}
-			table tr .two-col{
-				width: 50% !important;
-			}
-			table tr .two-col-placeholder{
-				width: 50%;
-			}
-			.header tr td{
-				font-size: 36px;
-			}
-			@media only screen and (max-width: 500px){
+	<link rel="stylesheet" type="text/css" href="styles.css">
 
-				table tr td[class="two-col"]{
-					width: 100% !important;
-					float: left;
-					display: block;
-				}
-				table tr td[class="two-col-placeholder"]{
-					width: 0 !important;
-					height: 0 !important;
-					padding: 0 !important;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<table bgcolor="#ccc" class="header">
-			<tr>
-				<td>
-					This is your header
-				</td>
-			</tr>
-		</table>
-		<table bgcolor="#ddd">
-			<tr>
-				<td>
-					One Columned Table
-				</td>
-			</tr>
-		</table>
-		<table bgcolor="#eee">
-			<tr>
-				<td class="two-col">
-					Two Columned Table
-				</td>
-				<td class="two-col">
-					Two Columned Table
-				</td>
-			</tr>
-		</table>
-		<table bgcolor="#aaa">
-			<tr>
-				<td class="two-col">
-					<h1>This is heading</h1>
-					Right Column Hidden
-				</td>
-				<td class="two-col-placeholder">
-					<!--Don't keep any content here-->
-				</td>
-			</tr>
-		</table>
-		<table bgcolor="grey">
-			<tr>
-				<td class="two-col-placeholder">
-					<!--Don't keep any content here-->
-				</td>
-				<td class="two-col">
-					Left Column Hidden
-				</td>
-			</tr>
-		</table>
-	</body>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+
+	<table class="container">
+		<tr>
+			<td>
+				<p class="h1 center">Luigi's Kitchen</p>
+				<p class="h4 center">Week of 6/7 - 12/7</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="btn btn-dark center">Partner Portal</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="h1">Your Stats</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="headbar">
+					320 Orders/ &euro;3.200 GMV<br/>
+					&euro;200 Missed Revenue from Declined Orders
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="two-col">
+				<div class="col">
+					<table class="contents">
+						<tr>
+							<td>
+								<p class="h3">
+									Be premium
+								</p>
+								<p>
+									Think you offer the best delivery service? Want to win prizes and get free premium placement? Join our Premium Vendors!
+								<p>	+ Bring delievery time under 40 minutes for free premium placement</p>
+								<p>	+ Lower your issue rate to 0% get free packaging
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="col">
+					<table class="contents">
+						<tr>
+							<p class="h3">
+								foodpanda News
+							</p>
+							<p>Dear partners, on Sunday we will a $300 off special on our website. Please ensure to have adequate suppliess ready. We expect a 35% surge in order volume.</p>
+							<p><a href="#">Read More</a></p>
+							<p>We are proud to feature Alferdo Curry House as our vendor of the month! He provides the fastest delivery and has incredibly high ratings. See here what makes Alfredo India's top delivery guy.</p>
+							<p><a href="#">Read More</a></p>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="h1 center">
+					Find our more ways to improve below!
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="headbar">
+					320 Orders/ &euro;3.200 GMV<br/>
+					&euro;200 Missed Revenue from Declined Orders
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="two-col">
+				<div class="col">
+					<img src="graph1.png">
+				</div>
+
+				<div class="col">
+					<img src="ad1.png">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="headbar">
+					3,90% // Issue Rate
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					Your issue rate represents orders you rejected, that had to be replaced and ones you cancelled.
+				</p>
+				
+			</td>
+		</tr>
+		<tr>
+			<td class="two-col">
+				<div class="col">
+					<p class="h0">Rejection over the past 6 weeks</p>
+					<img src="graph2.png">
+				</div>
+
+				<div class="col">
+					<img src="graph3.png">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="headbar">
+					2 min // Response Time
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					Your customers are eagerly waiting to know that they have their food plans set. Slow responses lead to unhappy customers.
+				</p>
+				
+			</td>
+		</tr>
+		<tr>
+			<td class="two-col">
+				<div class="col">
+					<p class="h0">Response time</p>
+					<img src="graph4.png">
+				</div>
+
+				<div class="col">
+					<div class="tipbox">
+					<p>Tip</p>
+					<p>
+						Have happy customers and more revenue when you keep ingredients for your top sellers in stock
+					</p>
+				</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="headbar">
+					2,20 // Rating
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					Your customers are eagerly waiting to know that they have their food plans set. Slow responses lead to unhappy customers.
+				</p>
+				<p class="h0">Response time</p>
+				
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<table>
+					<tr class="reviewstrip reviewstrip-dark">
+						<td>
+							<p class="h3 center">1 &star;</p>
+						</td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</td>
+					</tr>
+					<tr class="reviewstrip reviewstrip-dark">
+						<td>
+							<p class="h3 center">1 &star;</p>
+						</td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</td>
+					</tr>
+					<tr class="reviewstrip reviewstrip-dark">
+						<td>
+							<p class="h3 center">1 &star;</p>
+						</td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				
+			</td>
+		</tr>
+		
+	</table>
+
+</body>
 </html>
