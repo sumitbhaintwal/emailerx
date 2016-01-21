@@ -15,7 +15,7 @@
 			color: #eee;
 		}
 		.htmlcode{
-			background: #777;
+			background: #3d3d3d;
 			color: #eee;
 			line-height: 1.5em;
 		}
@@ -23,32 +23,32 @@
 </head>
 <body>
 
-	
+
 	<table class="header">
-		
-			<tr>
-				<td>
-					<p class="h1 center">This is the Header</p>
-					<p class="h4 center">Use <span class="highlight">.header</span> class on table to create header.</p>
-					
-				</td>
-			</tr>
+
+		<tr>
+			<td>
+				<p class="h1 center">This is the Header</p>
+				<p class="h4 center">Use <span class="highlight">.header</span> class on table to create header.</p>
+
+			</td>
+		</tr>
 	</table>
 	<table class="header">
 		<tr>
 			<td>
-				<table class="container" style="background:#666; color:#eee;">
+				<table class="container" style="background:#000; color:#eee;">
 					<tr>
 						<td>
 							<p class="h4">For eg. </p>
-							<p class="htmlcode">		
-									&lt;table class="header"&gt;<br>
-										<span class="tab1"></span>&lt;tr&gt;<br>
-										<span class="tab2"></span>&lt;td&gt;<br>
-										<span class="tab3"></span>&lt;p>This is the Header example&lt;/p&gt;<br>
-										<span class="tab2"></span>&lt;/td&gt;<br>
-										<span class="tab1"></span>&lt;/tr&gt;<br>
-									&lt;/table&gt;
+							<p class="htmlcode">
+								&lt;table class="header"&gt;<br>
+								<span class="tab1"></span>&lt;tr&gt;<br>
+								<span class="tab2"></span>&lt;td&gt;<br>
+								<span class="tab3"></span>&lt;p>This is the Header example&lt;/p&gt;<br>
+								<span class="tab2"></span>&lt;/td&gt;<br>
+								<span class="tab1"></span>&lt;/tr&gt;<br>
+								&lt;/table&gt;
 							</p>
 							<p>
 								You can modify background, paddings and all in CSS(obviously).
@@ -59,258 +59,128 @@
 			</td>
 		</tr>
 	</table>
-	
+
 	<table class="container">
-		<tr>
-			<td>
-				<p>All the low width section with white background is contained in <span class="highlight">.container</span> class.</p>
-				<p class="h4">
-					The markup is very simple.
-				</p>
-				<p class="htmlcode">		
-					&lt;table class="container"&gt;<br>
-						<span class="tab1"></span>&lt;tr&gt;<br>
-						<span class="tab2"></span>lt;td&gt;<br>
-						<span class="tab3"></span>&lt;p>This is a container&lt;/p&gt;<br>
-						<span class="tab2"></span>&lt;/td&gt;<br>
-						<span class="tab1"></span>&lt;/tr&gt;<br>
-					&lt;/table&gt;
-				</p>
-				<p>
-					The above is an example of one-columned container. There is no special class for creating one-columned container. It is a default thingy.
-				</p>
-				<p>
-					Now, let's check for the two-columned container.
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td class="two-col">
-				<div class="col">
-					<table class="contents">
-						<tr>
-							<td>
-								<p class="center highlight" style="border:2px solid #eee;">This is column 1</p>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="col">
-					<table class="contents">
-						<tr>
-							<td>
-								<p class="center highlight" style="border:2px solid #eee;">This is column 2</p>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p class="bold">Here is the full markup for two-columned container:</p>
-				<p class="htmlcode">
-					&lt;tr><br/>
-					<span class="tab1"></span>	&lt;td class="two-col"><br/>
-					<span class="tab2"></span>		&lt;div class="col"><br/>
-					<span class="tab3"></span>			&lt;table class="contents"><br/>
-					<span class="tab4"></span>				&lt;tr><br/>
-					<span class="tab5"></span>					&lt;td><br/>
-					<span class="tab6"></span>						&lt;p>This is column 1&lt;/p><br/>
-					<span class="tab5"></span>					&lt;/td><br/>
-					<span class="tab4"></span>				&lt;/tr><br/>
-					<span class="tab3"></span>			&lt;/table><br/>
-					<span class="tab2"></span>		&lt;/div><br/>
-					<span class="tab2"></span>		&lt;div class="col"><br/>
-					<span class="tab3"></span>			&lt;table class="contents"><br/>
-					<span class="tab4"></span>				&lt;tr><br/>
-					<span class="tab5"></span>					&lt;td><br/>
-					<span class="tab6"></span>						&lt;p>This is column 2&lt;/p><br/>
-					<span class="tab5"></span>					&lt;/td><br/>
-					<span class="tab4"></span>				&lt;/tr><br/>
-					<span class="tab3"></span>			&lt;/table><br/>
-					<span class="tab2"></span>		&lt;/div><br/>
-					<span class="tab1"></span>	&lt;/td><br/>
-					&lt;/tr>
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p class="btn btn-dark center">Partner Portal</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p class="h1">Your Stats</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p class="headbar">
-					320 Orders/ &euro;3.200 GMV<br/>
-					&euro;200 Missed Revenue from Declined Orders
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td class="two-col">
-				<div class="col">
-					<table class="contents">
-						<tr>
-							<td>
-								<p class="h3">
-									Be premium
-								</p>
-								<p>
-									Think you offer the best delivery service? Want to win prizes and get free premium placement? Join our Premium Vendors!
-								<p>	+ Bring delievery time under 40 minutes for free premium placement</p>
-								<p>	+ Lower your issue rate to 0% get free packaging
-								</p>
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="col">
-					<table class="contents">
-						<tr>
-							<p class="h3">
-								foodpanda News
-							</p>
-							<p>Dear partners, on Sunday we will a $300 off special on our website. Please ensure to have adequate suppliess ready. We expect a 35% surge in order volume.</p>
-							<p><a href="#">Read More</a></p>
-							<p>We are proud to feature Alferdo Curry House as our vendor of the month! He provides the fastest delivery and has incredibly high ratings. See here what makes Alfredo India's top delivery guy.</p>
-							<p><a href="#">Read More</a></p>
-						</tr>
-					</table>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p class="h1 center">
-					Find our more ways to improve below!
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p class="headbar">
-					320 Orders/ &euro;3.200 GMV<br/>
-					&euro;200 Missed Revenue from Declined Orders
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td class="two-col">
-				<div class="col">
-					<img src="graph1.png">
-				</div>
-
-				<div class="col">
-					<img src="ad1.png">
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p class="headbar">
-					3,90% // Issue Rate
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					Your issue rate represents orders you rejected, that had to be replaced and ones you cancelled.
-				</p>
-				
-			</td>
-		</tr>
-		<tr>
-			<td class="two-col">
-				<div class="col">
-					<p class="h0">Rejection over the past 6 weeks</p>
-					<img src="graph2.png">
-				</div>
-
-				<div class="col">
-					<img src="graph3.png">
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p class="headbar">
-					2 min // Response Time
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					Your customers are eagerly waiting to know that they have their food plans set. Slow responses lead to unhappy customers.
-				</p>
-				
-			</td>
-		</tr>
-		
-		<tr>
-			<td>
-				<p class="headbar">
-					2,20 // Rating
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					Your customers are eagerly waiting to know that they have their food plans set. Slow responses lead to unhappy customers.
-				</p>
-				<p class="h0">Response time</p>
-				
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				<table>
-					<tr class="reviewstrip reviewstrip-dark">
+	<tr>
+		<td>
+			<p>All the low width section with white background is contained in <span class="highlight">.container</span> class.</p>
+			<p class="h4">
+				The markup is very simple.
+			</p>
+			<p class="htmlcode">
+				&lt;table class="container"&gt;<br>
+				<span class="tab1"></span>&lt;tr&gt;<br>
+				<span class="tab2"></span>lt;td&gt;<br>
+				<span class="tab3"></span>&lt;p>This is a container&lt;/p&gt;<br>
+				<span class="tab2"></span>&lt;/td&gt;<br>
+				<span class="tab1"></span>&lt;/tr&gt;<br>
+				&lt;/table&gt;
+			</p>
+			<p>
+				The above is an example of one-columned container. There is no special class for creating one-columned container. It is a default thingy.
+			</p>
+			<p>
+				Now, let's check for the two-columned container.
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="two-col">
+			<div class="col">
+				<table class="contents">
+					<tr>
 						<td>
-							<p class="h3 center">1 &star;</p>
-						</td>
-						<td>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</td>
-					</tr>
-					<tr class="reviewstrip reviewstrip-dark">
-						<td>
-							<p class="h3 center">1 &star;</p>
-						</td>
-						<td>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</td>
-					</tr>
-					<tr class="reviewstrip reviewstrip-dark">
-						<td>
-							<p class="h3 center">1 &star;</p>
-						</td>
-						<td>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="center highlight" style="border:2px solid #eee;">This is column 1</p>
 						</td>
 					</tr>
 				</table>
-			</td>
-		</tr>
+			</div>
+			<div class="col">
+				<table class="contents">
+					<tr>
+						<td>
+							<p class="center highlight" style="border:2px solid #eee;">This is column 2</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0;">
+			<p class="bold">Here is the full markup for two-columned container:</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table style="background:#3d3d3d;">
+				<tr>
+					<td>
+						<p class="htmlcode">
+							&lt;tr><br/>
+							<span class="tab1"></span>	&lt;td class="two-col"><br/>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="two-col" style="padding:0;">
+						<div class="col" >
+							<table class="contents">
+								<tr>
+									<td>
+										<p class="center" style="color:#eee;">Column 1</p>
+										<p class="htmlcode">
+											<span class="tab2"></span>		&lt;div class="col"><br/>
+											<span class="tab3"></span>			&lt;table class="contents"><br/>
+											<span class="tab4"></span>				&lt;tr><br/>
+											<span class="tab5"></span>					&lt;td><br/>
+											<span class="tab6"></span>						&lt;p>This is column 1&lt;/p><br/>
+											<span class="tab5"></span>					&lt;/td><br/>
+											<span class="tab4"></span>				&lt;/tr><br/>
+											<span class="tab3"></span>			&lt;/table><br/>
+											<span class="tab2"></span>		&lt;/div><br/>
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="col">
+							<table class="contents">
+								<tr>
+									<td>
+										<p class="center" style="color:#eee;">Column 2</p>
+										<p class="htmlcode">
+											<span class="tab2"></span>		&lt;div class="col"><br/>
+											<span class="tab3"></span>			&lt;table class="contents"><br/>
+											<span class="tab4"></span>				&lt;tr><br/>
+											<span class="tab5"></span>					&lt;td><br/>
+											<span class="tab6"></span>						&lt;p>This is column 2&lt;/p><br/>
+											<span class="tab5"></span>					&lt;/td><br/>
+											<span class="tab4"></span>				&lt;/tr><br/>
+											<span class="tab3"></span>			&lt;/table><br/>
+											<span class="tab2"></span>		&lt;/div><br/>
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+			</table>
+		</td>
+	</tr>
 
-		<tr>
-			<td>
-				
-			</td>
-		</tr>
-		
-	</table>
+	</tr>
+
+
+
+
+	<tr>
+		<td>
+
+		</td>
+	</tr>
+
+</table>
 
 </body>
 </html>

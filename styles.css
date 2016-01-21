@@ -92,35 +92,7 @@ a{
  	background: #666;
  	color: #fff;
 }
-.tipbox{
-	width: 400px;
-	position: relative;
-}
-.tipbox p:nth-child(1){
-	background: #aaa;
-	margin: 0 auto;
-	padding: 10px;
-}
-.tipbox p:nth-child(2){
-	background: #ddd;
-	margin: 0 auto;
-	padding: 30px 10px;
-}
-.tipbox:after{
-	left: 50%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(237, 237, 237, 0);
-	border-left-color: #ddd;
-	border-width: 50px;
-	margin-top: -10px;
 
-}
 
 .contents {
 	width: 100%;
