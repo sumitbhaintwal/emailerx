@@ -8,16 +8,131 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<style type="text/css">
-
+		.highlight{
+			background: #3d3d3d;
+			padding: 5px;
+			border-radius: 3px;
+			color: #eee;
+		}
+		.htmlcode{
+			background: #777;
+			color: #eee;
+			line-height: 1.5em;
+		}
 	</style>
 </head>
 <body>
 
+	
+	<table class="header">
+		
+			<tr>
+				<td>
+					<p class="h1 center">This is the Header</p>
+					<p class="h4 center">Use <span class="highlight">.header</span> class on table to create header.</p>
+					
+				</td>
+			</tr>
+	</table>
+	<table class="header">
+		<tr>
+			<td>
+				<table class="container" style="background:#666; color:#eee;">
+					<tr>
+						<td>
+							<p class="h4">For eg. </p>
+							<p class="htmlcode">		
+									&lt;table class="header"&gt;<br>
+										<span class="tab1"></span>&lt;tr&gt;<br>
+										<span class="tab2"></span>&lt;td&gt;<br>
+										<span class="tab3"></span>&lt;p>This is the Header example&lt;/p&gt;<br>
+										<span class="tab2"></span>&lt;/td&gt;<br>
+										<span class="tab1"></span>&lt;/tr&gt;<br>
+									&lt;/table&gt;
+							</p>
+							<p>
+								You can modify background, paddings and all in CSS(obviously).
+							</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
 	<table class="container">
 		<tr>
 			<td>
-				<p class="h1 center">Luigi's Kitchen</p>
-				<p class="h4 center">Week of 6/7 - 12/7</p>
+				<p>All the low width section with white background is contained in <span class="highlight">.container</span> class.</p>
+				<p class="h4">
+					The markup is very simple.
+				</p>
+				<p class="htmlcode">		
+					&lt;table class="container"&gt;<br>
+						<span class="tab1"></span>&lt;tr&gt;<br>
+						<span class="tab2"></span>lt;td&gt;<br>
+						<span class="tab3"></span>&lt;p>This is a container&lt;/p&gt;<br>
+						<span class="tab2"></span>&lt;/td&gt;<br>
+						<span class="tab1"></span>&lt;/tr&gt;<br>
+					&lt;/table&gt;
+				</p>
+				<p>
+					The above is an example of one-columned container. There is no special class for creating one-columned container. It is a default thingy.
+				</p>
+				<p>
+					Now, let's check for the two-columned container.
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="two-col">
+				<div class="col">
+					<table class="contents">
+						<tr>
+							<td>
+								<p class="center highlight" style="border:2px solid #eee;">This is column 1</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col">
+					<table class="contents">
+						<tr>
+							<td>
+								<p class="center highlight" style="border:2px solid #eee;">This is column 2</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="bold">Here is the full markup for two-columned container:</p>
+				<p class="htmlcode">
+					&lt;tr><br/>
+					<span class="tab1"></span>	&lt;td class="two-col"><br/>
+					<span class="tab2"></span>		&lt;div class="col"><br/>
+					<span class="tab3"></span>			&lt;table class="contents"><br/>
+					<span class="tab4"></span>				&lt;tr><br/>
+					<span class="tab5"></span>					&lt;td><br/>
+					<span class="tab6"></span>						&lt;p>This is column 1&lt;/p><br/>
+					<span class="tab5"></span>					&lt;/td><br/>
+					<span class="tab4"></span>				&lt;/tr><br/>
+					<span class="tab3"></span>			&lt;/table><br/>
+					<span class="tab2"></span>		&lt;/div><br/>
+					<span class="tab2"></span>		&lt;div class="col"><br/>
+					<span class="tab3"></span>			&lt;table class="contents"><br/>
+					<span class="tab4"></span>				&lt;tr><br/>
+					<span class="tab5"></span>					&lt;td><br/>
+					<span class="tab6"></span>						&lt;p>This is column 2&lt;/p><br/>
+					<span class="tab5"></span>					&lt;/td><br/>
+					<span class="tab4"></span>				&lt;/tr><br/>
+					<span class="tab3"></span>			&lt;/table><br/>
+					<span class="tab2"></span>		&lt;/div><br/>
+					<span class="tab1"></span>	&lt;/td><br/>
+					&lt;/tr>
+				</p>
 			</td>
 		</tr>
 		<tr>
@@ -140,23 +255,7 @@
 				
 			</td>
 		</tr>
-		<tr>
-			<td class="two-col">
-				<div class="col">
-					<p class="h0">Response time</p>
-					<img src="graph4.png">
-				</div>
-
-				<div class="col">
-					<div class="tipbox">
-					<p>Tip</p>
-					<p>
-						Have happy customers and more revenue when you keep ingredients for your top sellers in stock
-					</p>
-				</div>
-				</div>
-			</td>
-		</tr>
+		
 		<tr>
 			<td>
 				<p class="headbar">
